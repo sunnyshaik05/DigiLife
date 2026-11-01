@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applications - DigiLife</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="sticky-nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon-wrapper">
+          <i data-lucide="smartphone" class="logo-icon"></i>
+          <span class="signal-badge"><i data-lucide="wifi"></i></span>
+        </div>
+        <div class="logo-text">
+          <span class="brand-title">DigiLife</span>
+        </div>
+      </a>
+      
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="applications.html" class="nav-link active">Applications</a>
+        <a href="impact.html" class="nav-link">Impact</a>
+        <a href="project.html" class="nav-link"> Project</a>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="applications.html" class="mobile-link active">Applications</a>
+    <a href="impact.html" class="mobile-link">Impact</a>
+    <a href="project.html" class="mobile-link">Project</a>
+    <a href="about.html" class="mobile-link">About</a>
+  </div>
+
+  <main>
+    <section class="page-banner">
+      <div class="container text-center reveal">
+        <h1>Mobile Technology in Everyday Life</h1>
+        <p>Exploring key sectors transformed by handheld connectivity and smart applications.</p>
+      </div>
+    </section>
+
+    <section class="content-section bg-light">
+      <div class="container">
+        <div class="cards-grid grid-4">
+          
+          <div class="card reveal">
+            <div class="card-icon"><i data-lucide="message-square"></i></div>
+            <h3>Communication & Social</h3>
+            <p>Instant messaging, video calling, and social networks bridge global distance seamlessly.</p>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-icon"><i data-lucide="graduation-cap"></i></div>
+            <h3>Education & Learning</h3>
+            <p>E-books, online learning platforms, and educational videos make learning accessible anytime.</p>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-icon"><i data-lucide="credit-card"></i></div>
+            <h3>Banking & Payments</h3>
+            <p>UPI, mobile wallets, and banking apps enable contactless and paperless financial management.</p>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-icon"><i data-lucide="heart-pulse"></i></div>
+            <h3>Healthcare & Fitness</h3>
+            <p>Telemedicine, step counters, and health monitors make personal care proactive and convenient.</p>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-icon"><i data-lucide="briefcase"></i></div>
+            <h3>Business & Productivity</h3>
+            <p>Remote working tools, document editing, and cloud services keep modern workplaces agile.</p>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-icon"><i data-lucide="gamepad-2"></i></div>
+            <h3>Entertainment & Gaming</h3>
+            <p>High-definition video streaming, music apps, and mobile gaming offer instant relaxation.</p>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-icon"><i data-lucide="shopping-bag"></i></div>
+            <h3>Shopping & E-Commerce</h3>
+            <p>On-demand shopping apps bring marketplaces directly to smartphones with fast delivery.</p>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-icon"><i data-lucide="map-pin"></i></div>
+            <h3>Navigation & Travel</h3>
+            <p>Real-time GPS routing, transit updates, and ride-hailing services make commuting simple.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

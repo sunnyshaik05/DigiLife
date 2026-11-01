@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impact - DigiLife</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="sticky-nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon-wrapper">
+          <i data-lucide="smartphone" class="logo-icon"></i>
+          <span class="signal-badge"><i data-lucide="wifi"></i></span>
+        </div>
+        <div class="logo-text">
+          <span class="brand-title">DigiLife</span>
+        </div>
+      </a>
+      
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="applications.html" class="nav-link">Applications</a>
+        <a href="impact.html" class="nav-link active">Impact</a>
+        <a href="project.html" class="nav-link">Project</a>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="applications.html" class="mobile-link">Applications</a>
+    <a href="impact.html" class="mobile-link active">Impact</a>
+    <a href="project.html" class="mobile-link">Project</a>
+    <a href="about.html" class="mobile-link">About</a>
+  </div>
+
+  <main>
+    <section class="page-banner">
+      <div class="container text-center reveal">
+        <h1>Understanding the Impact of Mobile Usage</h1>
+        <p>A balanced perspective on how mobile devices influence productivity, lifestyle, and wellbeing.</p>
+      </div>
+    </section>
+
+    <section class="content-section bg-light">
+      <div class="container">
+        
+        <!-- Impact Split Columns -->
+        <div class="impact-columns">
+          
+          <!-- Positive Impact -->
+          <div class="impact-col positive-col reveal">
+            <div class="col-header positive-header">
+              <i data-lucide="check-circle-2"></i>
+              <h2>Positive Impacts</h2>
+            </div>
+            <ul class="impact-list">
+              <li>
+                <strong>Easy Communication:</strong> Stay connected with family and colleagues in real time regardless of geographical distance.
+              </li>
+              <li>
+                <strong>Instant Access to Knowledge:</strong> Search engine answers, research portals, and digital libraries available anytime.
+              </li>
+              <li>
+                <strong>Educational Growth:</strong> Interactive apps, remote classrooms, and skill-building courses improve access to education.
+              </li>
+              <li>
+                <strong>Enhanced Productivity:</strong> Calendar scheduling, document collaboration, and task managers keep routines organized.
+              </li>
+              <li>
+                <strong>Emergency Safety:</strong> Fast SOS alerts, location sharing, and direct contact with emergency response systems.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Negative Impact -->
+          <div class="impact-col negative-col reveal">
+            <div class="col-header negative-header">
+              <i data-lucide="alert-triangle"></i>
+              <h2>Negative Impacts</h2>
+            </div>
+            <ul class="impact-list">
+              <li>
+                <strong>Excessive Screen Time:</strong> Prolonged screen use leads to eye strain, bad posture, and fatigue.
+              </li>
+              <li>
+                <strong>Academic Distractions:</strong> Frequent notifications and social media loops disrupt concentration and focus.
+              </li>
+              <li>
+                <strong>Sleep Disruptions:</strong> Blue light exposure before sleep reduces melatonin production and delays rest.
+              </li>
+              <li>
+                <strong>Reduced Physical Activity:</strong> Sedentary habits associated with excessive screen time affect overall fitness.
+              </li>
+              <li>
+                <strong>Privacy Risks:</strong> Digital footprints and cyber vulnerabilities require vigilant security precautions.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Smart Habits Section -->
+        <div class="habits-card reveal">
+          <div class="habits-header">
+            <i data-lucide="shield-check" class="habits-icon"></i>
+            <h2>Smart Mobile Habits</h2>
+          </div>
+          <div class="habits-grid">
+            <div class="habit-item">
+              <i data-lucide="clock"></i>
+              <h4>Set Screen Limits</h4>
+              <p>Track app usage daily and set quiet hours during work or study sessions.</p>
+            </div>
+            <div class="habit-item">
+              <i data-lucide="coffee"></i>
+              <h4>Take Frequent Breaks</h4>
+              <p>Practice the 20-20-20 rule to rest your eyes during extended phone usage.</p>
+            </div>
+            <div class="habit-item">
+              <i data-lucide="moon"></i>
+              <h4>Bedtime Digital Detox</h4>
+              <p>Avoid screens at least 30 minutes before sleep for better rest quality.</p>
+            </div>
+            <div class="habit-item">
+              <i data-lucide="lock"></i>
+              <h4>Protect Privacy</h4>
+              <p>Use strong passwords, enable two-factor authentication, and check app permissions.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

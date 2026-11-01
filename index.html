@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DigiLife - Mobile Technology in Everyday Life</title>
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="sticky-nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon-wrapper">
+          <i data-lucide="smartphone" class="logo-icon"></i>
+          <span class="signal-badge"><i data-lucide="wifi"></i></span>
+        </div>
+        <div class="logo-text">
+          <span class="brand-title">DigiLife</span>
+        </div>
+      </a>
+      
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="applications.html" class="nav-link">Applications</a>
+        <a href="impact.html" class="nav-link">Impact</a>
+        <a href="project.html" class="nav-link">Project</a>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <a href="index.html" class="mobile-link active">Home</a>
+    <a href="applications.html" class="mobile-link">Applications</a>
+    <a href="impact.html" class="mobile-link">Impact</a>
+    <a href="project.html" class="mobile-link">Project</a>
+    <a href="about.html" class="mobile-link">About</a>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="badge"><i data-lucide="sparkles"></i> Mobile Technology Insight</span>
+          <h1 class="hero-heading">Connecting Lives, <span class="gradient-text">Transforming</span> the Digital World.</h1>
+          <p class="hero-subtitle">Discover how mobile technology influences our everyday lives, creates opportunities, and shapes the way we connect with the world.</p>
+          <div class="hero-actions">
+            <a href="project.html" class="btn btn-primary"><i data-lucide="compass"></i> Explore Project</a>
+            <a href="applications.html" class="btn btn-secondary"><i data-lucide="arrow-right"></i> Discover More</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="hero-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80" alt="Mobile Technology in Action" class="hero-img">
+            <!-- <div class="floating-badge badge-top"><i data-lucide="zap"></i> Instant Access</div>
+            <div class="floating-badge badge-bottom"><i data-lucide="users"></i> Global Reach</div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="content-section bg-light">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>The Digital World Around Us</h2>
+          <p>Smartphones have evolved from mere communication tools into personal assistants, digital classrooms, and gateways to global connectivity.</p>
+        </div>
+
+        <div class="cards-grid">
+          <div class="card reveal">
+            <div class="card-icon"><i data-lucide="globe"></i></div>
+            <h3>Stay Connected</h3>
+            <p>Break geographical barriers instantly with real-time audio, video, and text communication anytime, anywhere.</p>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-icon"><i data-lucide="book-open"></i></div>
+            <h3>Learn Without Limits</h3>
+            <p>Access online courses, educational portals, and worldwide information directly from the palm of your hand.</p>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-icon"><i data-lucide="cpu"></i></div>
+            <h3>Live Smarter</h3>
+            <p>Streamline daily tasks—from digital banking and smart home control to fitness tracking and health management.</p>
+          </div>
+        </div>
+
+        <!-- Purpose Banner -->
+        <div class="purpose-banner reveal">
+          <div class="purpose-text">
+            <h3>Purpose of DigiLife</h3>
+            <p>DigiLife is an educational initiative dedicated to exploring the profound impact of mobile technology on modern societal dynamics.</p>
+          </div>
+          <a href="project.html" class="btn btn-primary"><i data-lucide="file-text"></i> Learn About Our Project</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
