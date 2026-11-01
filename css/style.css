@@ -605,27 +605,25 @@ img {
   margin-bottom: 6px;
 }
 
-/* Project Gallery */
+/* Project Gallery - Restored to Original CSS */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .gallery-item {
   position: relative;
   border-radius: var(--radius-md);
   overflow: hidden;
-  height: 260px;
+  height: 220px;
   box-shadow: var(--shadow-sm);
-  background: var(--pure-white);
 }
 
 .gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
   transition: var(--transition);
 }
 
@@ -841,10 +839,6 @@ img {
     flex-direction: column;
     text-align: center;
   }
-
-  .gallery-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 768px) {
@@ -879,10 +873,6 @@ img {
   .team-card:nth-child(5) {
     grid-column: auto;
   }
-
-  .gallery-item {
-    height: 220px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -899,13 +889,5 @@ img {
   .avatar-wrapper {
     width: 130px;
     height: 130px;
-  }
-
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery-item {
-    height: 240px;
   }
 }
